@@ -2,6 +2,8 @@
 
 
 ##Capturing group사용
-...javascript
+
+"'
 str.replace(/(.*value="\w+)(\d+)(\w+".*)/, "$1!NEW_ID!$3")
-...
+"'
+

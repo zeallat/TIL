@@ -22,3 +22,11 @@ memory 1024
 
 netcidr 설정
 10.0.15.0/24
+
+
+####su
+서브스테틱트? 유저 = 유저변경
+
+vi /etc/sysconfig/network-scripts/ifcfg-eth0
+에 접속해서
+booton = yes 로 변경

@@ -38,3 +38,10 @@ $ vi /etc/sysconfig/network-scripts/ifcfg-eth0
 vi /etc/sysconfig/network-scripts/ifcfg-eth0
 에 접속해서
 booton = yes 로 변경
+
+그후 ifconfig로 확인
+```
+$ ping www.google.com
+```
+으로 확인
+

@@ -113,3 +113,11 @@ $ yum install bind
 $ rpm -qc bind
 ```
 
+
+
+```bash
+$ cd ~
+$ cd ~user1
+```
+
+

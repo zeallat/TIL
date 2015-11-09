@@ -89,3 +89,15 @@ $ uname -n
 파일 생성 명령어
 
 
+
+
+ssh client
+깃 배쉬
+git bash
+ConEmu
+
+
+
+git bash 설치 -> conEmu 설치
+
+

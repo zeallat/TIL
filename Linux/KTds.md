@@ -27,11 +27,11 @@ netcidr 설정
 ####su
 서브스테틱트? 유저 = 유저변경
 
-'''bash
+```bash
 $ su
 Password:
 $ vi /etc/sysconfig/network-scripts/ifcfg-eth0
-'''
+```
 사용자 변경후, vi로 네트워크 정보파일 열어서 'ONBOOT' 변수값 'yes' 로 변경
 
 

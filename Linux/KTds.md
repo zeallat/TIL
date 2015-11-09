@@ -45,3 +45,22 @@ $ ping www.google.com
 ```
 으로 확인
 
+
+
+
+
+####shutdown
+종료
+
+$ shutdown -h now
+중지
+
+####hostname
+
+``` bash
+$ hostname -I
+```
+
+
+
+

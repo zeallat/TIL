@@ -9,7 +9,7 @@ net localgroup administrators imsiuser /add
 
 ##VM 설정
 
-새로만들기
+###새로만들기
 
 이름 : centos15a, centos15b
 linux redhat 64bit

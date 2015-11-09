@@ -63,4 +63,12 @@ $ hostname -I
 
 
 
+####uname
+커널 정보 확인
+```bash
+$ uname -a
+$ uname -n
+```
+
+
 

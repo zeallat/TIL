@@ -139,13 +139,46 @@ $ useradd user1
 $ passwd user1
 $ cat /etc/passwd
 ```
+
 '/etc/passwd'경로에 유저정보가 있다.
 
 
 openssh-server
 openssh-client
 
+ssh가 왕중요..
+
 ssh가 돌고있는지 확인해야함..
 
 
+
+
+##su
+```bash
+$ su root
+$ su -root
+$ su
+```
+
+
+
+##cd
+(change directory)
+```bash
+$ cd /home/adminuser/
+$ cd ~user1
+$ cd ~
+$ cd
+```
+
+
+
+##-R 옵션
+recurse옵션 : 하위~ 관련
+
+
+
+##remove
+remove는 복구 불가능.
+delete와 다른개념이다.
 

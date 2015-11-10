@@ -204,3 +204,19 @@ $ fallocate -l 10M smallfile.avi
 
 
 
+
+##파일 찾기
+```bash
+$ find / -name smallfile.avi
+```
+
+###에러구문 제외하고 찾기
+```bash
+$ find / -name smallfile.avi 2> /dev/null
+```
+에러구문은 /dev/null 경로로 보내라 -> 화면에 보이지마라.. 라는 뜻
+
+###찾은 파일 삭제하기
+```bash
+$ find / -name smallfile.avi -exec rm -rf {} \;
+```

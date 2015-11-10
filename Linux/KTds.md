@@ -121,3 +121,11 @@ $ cd ~user1
 ```
 
 
+
+
+#Day2
+
+```bash
+$ man ls | grep \\-l
+```
+manual에서 -l에 관해서만 찾아보는 방법

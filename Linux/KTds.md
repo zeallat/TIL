@@ -125,7 +125,27 @@ $ cd ~user1
 
 #Day2
 
+
+
 ```bash
 $ man ls | grep \\-l
 ```
 manual에서 -l에 관해서만 찾아보는 방법
+
+
+##유저 추가
+```bash
+$ useradd user1
+$ passwd user1
+$ cat /etc/passwd
+```
+'/etc/passwd'경로에 유저정보가 있다.
+
+
+openssh-server
+openssh-client
+
+ssh가 돌고있는지 확인해야함..
+
+
+

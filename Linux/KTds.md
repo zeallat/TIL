@@ -197,8 +197,9 @@ AWS에서 가상머신 생성해서
 
 ##fallocate
 ```bash
-    $ fallocate -l 10M smallfile.avi
+$ fallocate -l 10M smallfile.avi
 ```
+빈 파일 생성
 
 
 

@@ -220,3 +220,12 @@ $ find / -name smallfile.avi 2> /dev/null
 ```bash
 $ find / -name smallfile.avi -exec rm -rf {} \;
 ```
+
+
+
+
+#Day 3
+
+forward - proxy
+  forward와 proxy는 비슷하면서도 다르다
+redirect

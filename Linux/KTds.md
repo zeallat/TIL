@@ -229,3 +229,12 @@ $ find / -name smallfile.avi -exec rm -rf {} \;
 forward - proxy
   forward와 proxy는 비슷하면서도 다르다
 redirect
+
+
+###conemu에서 ssh접속하기
+
+```bash
+$ ssh 10.225.152.202 -l adminuser
+adminuser@10.225.152.202's password:
+```
+

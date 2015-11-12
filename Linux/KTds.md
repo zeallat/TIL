@@ -269,3 +269,27 @@ mkdir
 mount
 cf
 df -h
+
+
+
+
+###runlevel
+vi /etc/inittab
+
+
+
+
+
+###압축하기
+
+```bash
+$ tar cvf home.tar ./home
+$ tar cvzf home1.tar.gz ./home
+```
+
+
+
+
+
+
+

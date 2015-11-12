@@ -238,3 +238,34 @@ $ ssh 10.225.152.202 -l adminuser
 adminuser@10.225.152.202's password:
 ```
 
+
+#Day 4
+
+#### 백그라운드 작업하기
+명령 뒤에 & 붙여준다
+
+
+
+
+
+
+```bash
+$ cat /etc/fstab
+```
+
+
+
+
+```bash
+$ fdisk -l | grep /dev
+
+```
+
+
+
+partition : fdisk
+format : mkfs
+mkdir
+mount
+cf
+df -h

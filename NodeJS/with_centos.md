@@ -80,19 +80,19 @@ $ sudo yum list httpd
 ```
 
 
-httpd 설치
+- httpd 설치
 ```shell
 $ sudo yum install httpd -y
 ```
 
 
-httpd 서비스 시작
+- httpd 서비스 시작
 ```shell
 $ sudo service httpd start
 ```
 
   
-방화벽 해제
+- 방화벽 해제
 ```shell
 $ su
 $ service iptables stop
@@ -101,7 +101,7 @@ $ service ip6tables stop
 $ chkconfig ip6tables off
 ```  
     
-[옵션] SELinux 보안해제  
+- [옵션] SELinux 보안해제  
 'enforce'를 'disabled'로 수정
 ```shell
 $ getenforce

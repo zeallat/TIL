@@ -90,3 +90,13 @@ httpd 서비스 시작
 ```shell
 $ sudo service httpd start
 ```
+
+  
+방화벽 해제
+```shell
+$ su
+$ service iptables stop
+$ chkconfig iptables off
+$ service ip6tables stop
+$ chkconfig ip6tables off
+```

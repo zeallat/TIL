@@ -130,6 +130,12 @@ http://hackersstudy.tistory.com/41
 https://opentutorials.org/course/1492/8037  
 http://notpeelbean.tistory.com/entry/Git-GUI-%EB%8F%84%EA%B5%AC-SourceTree  
 
+#####저장소 생성
+복제/생성 > 새 저장소 생성
+
+#####GitHub 연결
+저장소 > 원격 저장소 추가
+
 ##Node.js
 ![alt tag](http://3.bp.blogspot.com/-4knZxjdupuA/UFbTv8YsRZI/AAAAAAAAAis/oPuhGhDz-H4/s1600/nodejs-dark.png)  
 Node.js®는 Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임입니다.
@@ -153,3 +159,5 @@ Hello World
 ```js
 console.log('Hello World');
 ```
+
+

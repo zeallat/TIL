@@ -64,7 +64,7 @@ Retype new password:
 passwd: all authentication tokens updated successfully.
 ```
 
-###Apache 설치
+##Apache 설치
 
 
 - 패키지 업데이트
@@ -101,7 +101,7 @@ $ service ip6tables stop
 $ chkconfig ip6tables off
 ```  
     
-- [옵션] SELinux 보안해제
+- [옵션] SELinux 보안해제  
 'enforce'를 'disabled'로 수정
 ```shell
 $ getenforce
@@ -110,3 +110,27 @@ $ vi config
 $ setenforce 0
 $ getenforce
 ```
+
+이제 아마존에서 제공한 서버 도메인으로 접속하면 아파치의 테스트 페이지가 표시됩니다.  
+
+##Node.js
+
+
+- nvm 설치
+```shell
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh | bash
+```
+- Node.js 안정화 버전 설치
+```shell
+$ nvm install stable
+```
+- 버전 확인
+```shell
+$ nvm ls
+$ nvm --version
+```
+
+##Git
+
+##GitHub
+

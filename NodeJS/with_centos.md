@@ -67,7 +67,7 @@ passwd: all authentication tokens updated successfully.
 ###Apache 설치
 
 
-패키지 업데이트
+####패키지 업데이트
 ```shell
 $ sudo yum update -y
 ```

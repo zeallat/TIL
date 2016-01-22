@@ -26,4 +26,18 @@ Amazon Web Service.
  - 'Launch'
  - Create a new key pair 선택후 key 이름 입력
  - 키발급 후 안전한곳에 저장
- - 
+
+ 
+##AWS instance 접속
+이제 Services > EC2 > Instances 에서 위에서 만든 인스턴스를 확인 가능합니다.  
+SSH연결을 위해 SSH 클라이언트를 준비합니다.  
+http://www.netsarang.co.kr/xshell_download.html  
+
+Xshell 5 실행 > 파일 > 열기 > 새로만들기  
+이름에는 자신이 원하는 이름을 써넣습니다.  
+호스트에는 EC2 인스턴스 우클릭 > Connect에서 표시되는 Public DNS 경로를 입력합니다.  
+사용자 인증 탭으로 이동 후 '방법'을 'Public Key'로 변경합니다.  
+
+
+
+

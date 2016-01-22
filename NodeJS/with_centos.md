@@ -1,4 +1,7 @@
-#AWS + Cent OS + Git Hub + Node.js
+#AWS + CentOS + GitHub + Node.js
+
+##목표
+AWS에서 호스팅받아서 Cent OS설치후 Node.js로 Http서버 구축하며 GitHub로 형상관리하는것이 목표입니다.
 
 ##개발환경
 - AWS EC2 (t2.micro) (Tokyo)

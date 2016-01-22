@@ -76,3 +76,13 @@ httpd 설치여부 확인
 $ sudo rpm -qa httpd
 $ sudo yum list httpd
 ```
+
+httpd 설치
+```shell
+$ sudo yum install httpd -y
+```
+
+httpd 서비스 시작
+```shell
+$ sudo service httpd start
+```

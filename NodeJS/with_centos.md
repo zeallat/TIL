@@ -114,14 +114,14 @@ $ getenforce
 이제 아마존에서 제공한 서버 도메인으로 접속하면 아파치의 테스트 페이지가 표시됩니다.  
 
 ##Git
-![alt tag](https://git-scm.com/images/logo@2x.png)
+![alt tag](https://git-scm.com/images/logo@2x.png)  
 ##GitHub
-![alt tag](https://kanbanize.com/blog/wp-content/uploads/2014/11/GitHub.jpg)
+![alt tag](https://kanbanize.com/blog/wp-content/uploads/2014/11/GitHub.jpg)  
 - 회원가입
 - 레포지토리 생성
 
 ###SourceTree
-![alt tag](https://www.sourcetreeapp.com/images/logoSourceTree.png)
+![alt tag](https://www.sourcetreeapp.com/images/logoSourceTree.png)  
 Git의 GUI 툴입니다.
 ####설치
 https://www.sourcetreeapp.com/

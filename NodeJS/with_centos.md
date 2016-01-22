@@ -117,6 +117,7 @@ $ getenforce
 ![alt tag](https://git-scm.com/images/logo@2x.png)  
 ##GitHub
 ![alt tag](https://kanbanize.com/blog/wp-content/uploads/2014/11/GitHub.jpg)  
+https://github.com/  
 - 회원가입
 - 레포지토리 생성
 
@@ -162,9 +163,25 @@ $ nvm --version
 ```
 
 ###사용하기
-Hello World
+####Hello World
 ```js
 console.log('Hello World');
 ```
+커밋 후 푸쉬
+#####풀 후 실행
+```shell
+$ node test.js
+```
 
+####웹서버 만들기
+```js
+var http = require('http');
+
+var server = http.createServer(function (req, res) {
+  res.writeHead(200, { 'Content-Type' : 'text/plain' });
+  res.end('Hello World');
+});
+
+server.listen(8000);
+```
 

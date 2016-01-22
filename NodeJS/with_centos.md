@@ -43,5 +43,13 @@ Xshell 5 실행 > 파일 > 열기 > 새로만들기 선택합니다.
 '알수없는 호스트키' 수락 및 저장 합니다.  
 
 
+```bash
+Host 'ec2-52-193-74-30.ap-northeast-1.compute.amazonaws.com' resolved to 52.193.74.30.
+Connecting to 52.193.74.30:22...
+Connection established.
+To escape to local shell, press 'Ctrl+Alt+]'.
 
+[centos@ip-172-31-29-218 ~]$ 
+
+```
 

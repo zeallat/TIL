@@ -127,7 +127,8 @@ Git의 GUI 툴입니다.
 https://www.sourcetreeapp.com/
 
 ##Node.js
-
+![alt tag](http://3.bp.blogspot.com/-4knZxjdupuA/UFbTv8YsRZI/AAAAAAAAAis/oPuhGhDz-H4/s1600/nodejs-dark.png)  
+Node.js®는 Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임입니다.
 
 - nvm 설치
 ```shell

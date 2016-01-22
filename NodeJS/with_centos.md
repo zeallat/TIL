@@ -18,4 +18,12 @@ Amazon Web Service.
 ##AWS 가입
 
 ##AWS instance 생성
-
+ - Services > EC2 선택
+ - 좌측에서 INSTANCES > Instances 선택
+ - 'Launch Instance' 선택
+ - AWS Marketplace 선택후 'centos'검색
+ - 'CentOs 6 with HVM' 선택후 'Review and Launch'
+ - 'Launch'
+ - Create a new key pair 선택후 key 이름 입력
+ - 키발급 후 안전한곳에 저장
+ - 

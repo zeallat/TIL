@@ -237,7 +237,15 @@ server.listen(8000, function() {
 ```shell
 $ npm install express
 ```
-npm(Node Packaged Modules)은 Node.js로 만들어진 모듈을 인터넷에서 받아서 설치해주는 패키지 매니저입니다.
+npm(Node Packaged Modules)은 Node.js로 만들어진 모듈을 인터넷에서 받아서 설치해주는 패키지 매니저입니다.  
+Node.js가 대세가 된 결정적인 부분은 이 npm에 있습니다.  
+npm 자체가 월등히 훌륭해서가 아니고, Node.js 모듈의 개수가 상상을 초월할 만큼 많다는 겁니다. 대략 몇 만개 단위입니다.  
+우리가 생각한 모든게 다 Node.js 모듈로 만들어져 있습니다(GitHub 저장소의 상당수가 Node.js 모듈입니다).  
+새로 만들 필요 없이 npm으로 설치해서 쓰면 됩니다.  
+이 수많은 Node.js 모듈로 인해 엄청난 생산성 향상을 가져왔습니다.  
+(http://pyrasis.com/nodejs/nodejs-HOWTO 에서 발췌)  
 
-
+```shell
+$ node app.js
+```
 

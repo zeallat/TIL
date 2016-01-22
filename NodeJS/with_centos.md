@@ -136,6 +136,13 @@ http://notpeelbean.tistory.com/entry/Git-GUI-%EB%8F%84%EA%B5%AC-SourceTree
 #####GitHub 연결
 저장소 > 원격 저장소 추가
 
+#####Push
+- Hello.txt생성
+- 스테이지에 추가
+- 커밋
+- 푸쉬
+  
+이제 GitHub에 파일이 정상적으로 업로드 된것을 확인할 수 있습니다.
 ##Node.js
 ![alt tag](http://3.bp.blogspot.com/-4knZxjdupuA/UFbTv8YsRZI/AAAAAAAAAis/oPuhGhDz-H4/s1600/nodejs-dark.png)  
 Node.js®는 Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임입니다.

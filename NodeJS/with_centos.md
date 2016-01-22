@@ -115,6 +115,12 @@ $ getenforce
 
 ##Git
 ![alt tag](https://git-scm.com/images/logo@2x.png)  
+
+###설치
+```shell
+$ sudo yum install git -y
+```
+
 ##GitHub
 ![alt tag](https://kanbanize.com/blog/wp-content/uploads/2014/11/GitHub.jpg)  
 https://github.com/  
@@ -144,6 +150,16 @@ http://notpeelbean.tistory.com/entry/Git-GUI-%EB%8F%84%EA%B5%AC-SourceTree
 - 푸쉬
   
 이제 GitHub에 파일이 정상적으로 업로드 된것을 확인할 수 있습니다.
+
+#####Pull
+```shell
+$ mkdir node_test
+$ cd node_test/
+$ git clone https://github.com/zeallat/aws_node.git
+$ git pull
+```
+clone명령을 통해서 원격 저장소를 복제할 수 있습니다.  
+pull명령을 통해서 원격 저장소의 변경사항을 업데이트 받을 수 있습니다.  
 ##Node.js
 ![alt tag](http://3.bp.blogspot.com/-4knZxjdupuA/UFbTv8YsRZI/AAAAAAAAAis/oPuhGhDz-H4/s1600/nodejs-dark.png)  
 Node.js®는 Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임입니다.

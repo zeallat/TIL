@@ -125,6 +125,10 @@ $ getenforce
 Git의 GUI 툴입니다.
 ####설치
 https://www.sourcetreeapp.com/
+####사용
+http://hackersstudy.tistory.com/41  
+https://opentutorials.org/course/1492/8037  
+http://notpeelbean.tistory.com/entry/Git-GUI-%EB%8F%84%EA%B5%AC-SourceTree  
 
 ##Node.js
 ![alt tag](http://3.bp.blogspot.com/-4knZxjdupuA/UFbTv8YsRZI/AAAAAAAAAis/oPuhGhDz-H4/s1600/nodejs-dark.png)  

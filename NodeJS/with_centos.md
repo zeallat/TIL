@@ -99,7 +99,7 @@ $ service iptables stop
 $ chkconfig iptables off
 $ service ip6tables stop
 $ chkconfig ip6tables off
-```
+```  
     
 [옵션] SELinux 보안해제  
 'enforce'를 'disabled'로 수정

@@ -116,6 +116,9 @@ $ getenforce
 ##Git
 ![alt tag](https://git-scm.com/images/logo@2x.png)  
 
+###가이드
+https://rogerdudler.github.io/git-guide/index.ko.html
+
 ###설치
 ```shell
 $ sudo yum install git -y
@@ -200,4 +203,41 @@ var server = http.createServer(function (req, res) {
 
 server.listen(8000);
 ```
+```shell
+$ node test2.js
+```
+이제 도메인:8000 에서 웹서버가 가동중임을 확인해볼 수 있습니다.
+
+
+####express
+express는 Node.js에서 가장 유명한 웹 프레임워크 모듈입니다.  
+express를 이용하면 더 간단하게 웹 서버를 만들 수 있고, 다양한 템플릿 엔진과 기능들을 사용할 수 있습니다.
+
+#####express로 웹서버 만들기
+시작하기에 앞서 git 레포지토리에 생성했던 파일들을 삭제합니다.  
+```js
+var express = require('express')
+  , http = require('http')
+  , app = express()
+  , server = http.createServer(app);
+
+app.get('/', function (req, res) {
+  res.send('Hello /');
+});
+
+app.get('/world.html', function (req, res) {
+  res.send('Hello World');
+});
+
+server.listen(8000, function() {
+  console.log('Express server listening on port ' + server.address().port);
+});
+```
+######express 모듈 설치
+```shell
+$ npm install express
+```
+npm(Node Packaged Modules)은 Node.js로 만들어진 모듈을 인터넷에서 받아서 설치해주는 패키지 매니저입니다.
+
+
 

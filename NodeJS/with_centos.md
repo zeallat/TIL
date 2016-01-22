@@ -113,6 +113,13 @@ $ getenforce
 
 이제 아마존에서 제공한 서버 도메인으로 접속하면 아파치의 테스트 페이지가 표시됩니다.  
 
+##Git
+
+##GitHub
+
+- 회원가입
+- 레포지토리 생성
+- 
 ##Node.js
 
 
@@ -130,9 +137,8 @@ $ nvm ls
 $ nvm --version
 ```
 
-##Git
-
-##GitHub
-###선결과제
-- 회원가입
-- 레포지토리 생성
+###사용하기
+Hello World
+```js
+console.log('Hello World');
+```

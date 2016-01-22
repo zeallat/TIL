@@ -53,3 +53,16 @@ To escape to local shell, press 'Ctrl+Alt+]'.
 
 ```
 
+##CentOS 설정
+
+###root계정 설정
+```bash
+[centos@ip-172-31-29-218 ~]$ sudo passwd root
+Changing password for user root.
+New password: 
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+```
+
+###Apache 설치
+

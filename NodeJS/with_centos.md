@@ -33,10 +33,14 @@ Amazon Web Service.
 SSH연결을 위해 SSH 클라이언트를 준비합니다.  
 http://www.netsarang.co.kr/xshell_download.html  
 
-Xshell 5 실행 > 파일 > 열기 > 새로만들기  
+Xshell 5 실행 > 파일 > 열기 > 새로만들기 선택합니다.  
 이름에는 자신이 원하는 이름을 써넣습니다.  
 호스트에는 EC2 인스턴스 우클릭 > Connect에서 표시되는 Public DNS 경로를 입력합니다.  
 사용자 인증 탭으로 이동 후 '방법'을 'Public Key'로 변경합니다.  
+'사용자 이름'에는 'centos'를 입력합니다.  
+사용자 키 > 찾아보기 > 가져오기 선택 후 위에서 저장했던 key를 선택합니다.  
+'확인' > 생성한 세션 선택후 연결  
+'알수없는 호스트키' 수락 및 저장 합니다.  
 
 
 

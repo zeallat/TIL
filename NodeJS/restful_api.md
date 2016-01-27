@@ -103,5 +103,8 @@ REST_ROUTER.prototype.handleRoutes= function(router,connection,md5) {
 
 module.exports = REST_ROUTER;
 ```
+  
+
+이제 ```[호스트]:3000/api```로 접근하면 메세지가 뜨는것을 확인할 수 있습니다.  
 
 

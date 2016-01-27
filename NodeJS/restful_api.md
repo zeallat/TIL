@@ -1,4 +1,22 @@
-#RESTFUL API 서버 구현하기
+#RESTful API 서버 구현하기
+
+##RESTful API
+###필요성
+백엔드와 프론트엔드의 분리를 위해 필요합니다.  
+
+###특징
+####Stateless
+세션, 쿠키정보 필요없습니다.    
+서비스의 자유도 및 기타 유연한 설계가 가능합니다.
+
+####URI를 이용
+REST는 모든 유일한 오브젝트에 대해 유일하고 직관적인 URI을 통해 접근하도록 한다.  
+e.g.)네이버 회원중 유저아이디가 1234인 회원의 정보를 조회  
+http://www.naver.com/user/1234  
+
+####HTTP 메소드를 사용
+REST는 HTTP에서 제공하는 GET, PUT, POST, DELETE 4개의 메소드(여기에 HEAD나 OPTION을 추가하는 경우도 있다)를 이용해서 서비스를 제공합니다. 보통 DB의 CRUD와 같은 기능을 합니다.
+그러나, CRUD로 분류할 수 없는 유형의 요청에 대해서는 URI를 잘 정의해야함으로 주의해야합니다.
 
 ##프로젝트 생성
 ###디렉토리 생성 및 초기화
@@ -104,7 +122,9 @@ REST_ROUTER.prototype.handleRoutes= function(router,connection,md5) {
 module.exports = REST_ROUTER;
 ```
   
-
+```shell
+$ npm start
+```
 이제 ```[호스트]:3000/api```로 접근하면 메세지가 뜨는것을 확인할 수 있습니다.  
 
 

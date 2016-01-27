@@ -31,6 +31,7 @@ $ npm install
 ```npm install```명령어는 의존성 관계에 있는 패키지를 설치합니다.  
 
 ##기본 구성 및 데이터 베이스 연결
+###server.js
 ```javascript
 var express = require("express");
 var mysql   = require("mysql");
@@ -87,5 +88,20 @@ REST.prototype.stop = function(err) {
 new REST();
 ```
 
+###rest.js
+```javascript
+function REST_ROUTER(router,connection,md5) {
+    var self = this;
+    self.handleRoutes(router,connection,md5);
+}
+
+REST_ROUTER.prototype.handleRoutes= function(router,connection,md5) {
+    router.get("/",function(req,res){
+        res.json({"Message" : "Hello World !"});
+    })
+}
+
+module.exports = REST_ROUTER;
+```
 
 

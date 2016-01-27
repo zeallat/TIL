@@ -1,6 +1,25 @@
 #RESTful API 서버 구현하기
 
 ##RESTful API
+###예시
+#####요청
+```GET [호스트]/api/users/1```
+#####응답
+```json
+{
+    "Error": false,
+    "Message": "Success",
+    "Users": [
+        {
+            "user_id": 1,
+            "user_email": "zeallat@naver.com",
+            "user_password": "81dc9bdb52d04dc20036dbd8313ed055",
+            "user_join_date": "2016-01-27T06:53:47.000Z"
+        }
+    ]
+}
+```
+
 ###필요성
 백엔드와 프론트엔드의 분리를 위해 필요합니다.  
 

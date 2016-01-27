@@ -8,13 +8,12 @@ $ npm init
 ```
 
 ###Package.json 수정
-서버 시작 스크립트 추가 및 의존성 추가
+서버 시작 스크립트 추가 및 의존성 관계 패키지 추가
 ```json
 {
-  "name": "RESTful-API",
-  "version": "0.0.1",
+  ...
   "scripts": {
-    "start": "node Server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "~4.12.2",
@@ -24,8 +23,10 @@ $ npm init
   }
 }
 ```
-
-
+```shell
+$ npm install
+```
+```npm install```명령어는 의존성 관계에 있는 패키지를 설치합니다.  
 
 
 

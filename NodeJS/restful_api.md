@@ -42,11 +42,45 @@ REST는 HTTP에서 제공하는 GET, PUT, POST, DELETE 4개의 메소드(여기�
 그러나, CRUD로 분류할 수 없는 유형의 요청에 대해서는 URI를 잘 정의해야함으로 주의해야합니다.
 
 ##프로젝트 생성
-###디렉토리 생성 및 초기화
+###디렉토리 생성
 ```bash
 $ mkdir test && cd test
 $ npm init
 ```
+
+###git설정 및 Package.json초기화
+```shell
+$ git init
+$ npm init
+$ git add *
+$ git commit -m “first commit”
+$ git remote add origin [레포지토리 ssh 주소]
+$ git push -u origin master
+```
+
+####SSH Key 등록
+#####ssh key 생성
+```shell
+$ ssh-keygen -t rsa -b 4096 -C "zeallat94@gmail.com"
+```
+#####ssh-agent 확인
+```shell
+$ eval "$(ssh-agent -s)"
+```
+#####ssh-agent에 ssh key 설정
+```shell
+$ ssh-add ~/.ssh/id_rsa
+```
+//ssh key를 복사 후 github > Settings > SSH keys에 가서 등록
+#####ssh key를 GitHub에 등록
+```shell
+$ cat ~/.ssh/id_rsa.pub 
+```
+#####ssh 연결 테스트
+```shell
+$ ssh -T git@github.com
+```
+
 
 ###Package.json 수정
 ```json

@@ -178,7 +178,7 @@ $ npm start
 
 
 
-##구현할 API
+##API 구현
 
 ###구현 목표
 | Api | Type | Description |
@@ -207,20 +207,26 @@ function REST_ROUTER(router,connection,md5) {
 }
 
 REST_ROUTER.prototype.handleRoutes = function(router,connection,md5) {
-    // var self = this;
+
     router.get("/",function(req,res){
         res.json({"Message" : "Hello World !"});
     });
 
     //유저 추가
-  router.post("/users", function(req, res){
+    //HTTP 메소드 타입 선택
+    //URI 선택
+    router.post("/users", function(req, res){
+      //작업 완료시 콜백되는 함수입니다.
+      //쿼리문 작성
       var query = "INSERT INTO ??(??,??) VALUES (?,?)";
       var table = ["user_info","user_email","user_password",req.body.user_email,md5(req.body.user_password)];
       query = mysql.format(query, table);
       connection.query(query, function(err, rows){
         if(err){
+          //에러 발생시
           res.json({"Error" : true, "Message" : "Error during executing query - "+err});
         } else {
+          //정상 처리시
           res.json({"Error" : false, "Message" : "Success"});
         }
       });
@@ -287,3 +293,7 @@ REST_ROUTER.prototype.handleRoutes = function(router,connection,md5) {
 module.exports = REST_ROUTER;
 ```
 
+####테스트
+이제 구현한 API를 사용하여 유저를 추가, 조회, 삭제, 업데이트가 가능합니다.  
+테스트는 HTTP 통신 테스트 툴인 'Postman'을 사용해보겠습니다.   
+https://goo.gl/G4YqwW 이곳에서 받을 수 있습니다.   

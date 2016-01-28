@@ -71,16 +71,15 @@ $ eval "$(ssh-agent -s)"
 ```shell
 $ ssh-add ~/.ssh/id_rsa
 ```
-//ssh key를 복사 후 github > Settings > SSH keys에 가서 등록
 #####ssh key를 GitHub에 등록
 ```shell
 $ cat ~/.ssh/id_rsa.pub 
 ```
+ssh key를 복사 후 github > Settings > SSH keys에 가서 등록
 #####ssh 연결 테스트
 ```shell
 $ ssh -T git@github.com
 ```
-
 
 ###Package.json 수정
 ```json

@@ -68,6 +68,31 @@ $ npm install
 ```npm install```명령어는 의존성 관계에 있는 패키지를 설치합니다.  
 
 ##기본 구성 및 데이터 베이스 연결
+
+###테이블 생성
+
+```sql
+CREATE TABLE user_info(
+  user_id INT NOT NULL AUTO_INCREMENT,
+    user_email VARCHAR(100) NOT NULL,
+    user_password VARCHAR(200) NULL,
+    creation_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (user_id),
+    UNIQUE INDEX user_email_UNIQUE (user_email ASC)
+);
+
+CREATE TABLE message(
+  message_id INT NOT NULL AUTO_INCREMENT,
+    user_id_fk INT NOT NULL,
+    body VARCHAR(2000) NULL,
+    creation_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (message_id),
+    FOREIGN KEY (user_id_fk) REFERENCES user_info(user_id)
+);
+```
+
 ###server.js
 ```javascript
 var express = require("express");

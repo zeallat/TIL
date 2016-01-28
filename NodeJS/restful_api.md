@@ -179,6 +179,8 @@ $ npm start
 
 
 ##구현할 API
+
+###구현 목표
 | Api | Type | Description |
 |-----|------|-------------|
 |/users|POST|유저 추가|
@@ -192,3 +194,96 @@ $ npm start
 |/messages/[message_id]|PUT|메세지 정보 업데이트|
 |/messages/[message_id]|DELETE|메세지 삭제|
 |/users/[user_id]/messages|GET|특정 유저의 메세지 목록 반환|
+
+###유저 API 구현
+
+####rest.js
+```javascript
+var mysql   = require("mysql");
+
+function REST_ROUTER(router,connection,md5) {
+    var self = this;
+    self.handleRoutes(router,connection,md5);
+}
+
+REST_ROUTER.prototype.handleRoutes = function(router,connection,md5) {
+    // var self = this;
+    router.get("/",function(req,res){
+        res.json({"Message" : "Hello World !"});
+    });
+
+    //유저 추가
+  router.post("/users", function(req, res){
+      var query = "INSERT INTO ??(??,??) VALUES (?,?)";
+      var table = ["user_info","user_email","user_password",req.body.user_email,md5(req.body.user_password)];
+      query = mysql.format(query, table);
+      connection.query(query, function(err, rows){
+        if(err){
+          res.json({"Error" : true, "Message" : "Error during executing query - "+err});
+        } else {
+          res.json({"Error" : false, "Message" : "Success"});
+        }
+      });
+    });
+
+    //유저 목록 조회
+    router.get("/users", function(req, res){
+      var query = "SELECT * FROM ??";
+      var table = ["user_info"];
+      query = mysql.format(query, table);
+      connection.query(query, function(err, rows){
+        if(err){
+          res.json({"Error" : true, "Message" : "Error during executing query - "+err});
+        } else {
+          res.json({"Error" : false, "Message" : "Success", "Users" : rows});
+        }
+      });
+    });
+
+    //특정 유저 조회
+    router.get("/users/:user_id", function(req, res){
+      var query = "SELECT * FROM ?? WHERE ??=?";
+      var table = ["user_info","user_id",req.params.user_id];
+      query = mysql.format(query, table);
+      connection.query(query, function(err, rows){
+        if(err){
+          res.json({"Error" : true, "Message" : "Error during executing query - "+err});
+        } else {
+          res.json({"Error" : false, "Message" : "Success", "Users" : rows});
+        }
+      });
+    });
+
+    //특정 유저 업데이트
+    router.put("/users/:user_id", function(req, res){
+      var query = "SELECT * FROM ?? WHERE ??=?";
+      var query = "UPDATE ?? SET ??=? WHERE ??=?"
+      var table = ["user_info","user_password",md5(req.body.user_password), "user_id", req.params.user_id];
+      query = mysql.format(query, table);
+      connection.query(query, function(err, rows){
+        if(err){
+          res.json({"Error" : true, "Message" : "Error during executing query - "+err});
+        } else {
+          res.json({"Error" : false, "Message" : "Success"});
+        }
+      });
+    });
+
+    //특정 유저 삭제
+    router.delete("/users/:user_id", function(req, res){
+      var query = "DELETE FROM ?? WHERE ??=?";
+      var table = ["user_info","user_id",req.params.user_id];
+      query = mysql.format(query, table);
+      connection.query(query, function(err, rows){
+        if(err){
+          res.json({"Error" : true, "Message" : "Error during executing query - "+err});
+        } else {
+          res.json({"Error" : false, "Message" : "Success"});
+        }
+      });
+    });
+}
+
+module.exports = REST_ROUTER;
+```
+

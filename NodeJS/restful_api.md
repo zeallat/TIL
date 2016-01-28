@@ -186,15 +186,9 @@ $ npm start
 |/users/[user_id]|GET|특정 유저 정보 반환|
 |/users/[user_id]|PUT|특정 유저 정보 업데이트|
 |/users/[user_id]|DELETE|특정 유저 정보 삭제|
-
-| Api | Type | Description |
-|-----|------|-------------|
 |/messages|POST|메세지 추가|
 |/messages|GET|메세지 목록 반환|
 |/messages/[message_id]|GET|메세지 정보 반환|
 |/messages/[message_id]|PUT|메세지 정보 업데이트|
 |/messages/[message_id]|DELETE|메세지 삭제|
-
-| Api | Type | Description |
-|-----|------|-------------|
 |/users/[user_id]/messages|GET|특정 유저의 메세지 목록 반환|

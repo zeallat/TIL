@@ -177,3 +177,27 @@ $ npm start
 이제 ```[호스트]:3000/api```로 접근하면 메세지가 뜨는것을 확인할 수 있습니다.  
 
 
+
+##구현할 API
+| Api | Type | Description |
+|-----|------|-------------|
+|/users|POST|유저 추가|
+|/users|GET|유저 정보 목록 반환|
+|/users/[user_id]|GET|특정 유저 정보 반환|
+|/users/[user_id]|PUT|특정 유저 정보 업데이트|
+|/users/[user_id]|DELETE|특정 유저 정보 삭제|
+|/messages|POST|메세지 추가|
+|/messages|GET|메세지 목록 반환|
+|/messages/|POST|메세지 추가|
+|/messages|POST|메세지 추가|
+
+
+
+
+
+
+/users  POST  Takes email and password as input data and add new user.
+/users  GET Returns every users from database
+/users/:userId  GET Returns users from database with match of userId.
+/users/:email/  PUT Update password of user by passing email ID.
+/users/:email DELETE  Delete user from database.
